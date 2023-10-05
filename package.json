@@ -1,0 +1,15 @@
+{
+  "name": "ejemplo",
+  "version": "1.0.0",
+  "description": "esto es mi primer ejercicio en node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "antoniojesus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "git": "^0.1.5"
+  }
+}
