@@ -244,7 +244,8 @@ footer p {
 }
 
 .inf {
-    background-color: rgba(0, 12, 26, 0.767);
+    /* background-color: rgba(0, 12, 26, 0.767); */
+    background-color: green;
     border: 2px solid transparent;
     text-align: center;
     color: aliceblue;
