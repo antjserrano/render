@@ -1,10 +1,14 @@
-const express = require('express')
-const app = express()
-const path = require('path')
+const express = require('express');
+const app = express();
+const path = require('path');
 
-app.get('/', function (req, res){
-    // res.send('hola mundo')
-    res.sendFile(path.resolve(__dirname, 'index.html'))
-})
+// Agrega esta línea para servir archivos estáticos desde la misma ubicación
+app.use(express.static(__dirname));
 
-app.listen(3000)
+app.get('/', function (req, res) {
+    res.sendFile(path.resolve(__dirname, 'index.html'));
+});
+
+app.listen(3000, () => {
+    console.log('Servidor escuchando en el puerto 3000');
+});
